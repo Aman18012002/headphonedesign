@@ -10,8 +10,45 @@ nav{
     justify-content: space-around;
     padding-top: 1rem;
 }
+.imgclass{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:1070px){
+ .nav-item{
+    display: none;
+ }   
+ html{
+    font-size: 70%;
+ }
+.width-1{
+    width: 15%;
+}
+.width{
+    width: 35%;
+}
+ .intro-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+ }
+ .action-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .discount{
+    width: 12rem;
+ }
+}
+
+
+
 .nav-items{
     display: flex;
+    align-items: center;
     gap: 4rem;
     font-size: 1.8rem;
     font-weight: 700;
@@ -24,12 +61,12 @@ nav{
     font-weight: 500;
 }
 .action-btns{
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .text{
     margin-top: 3rem;
     color: rgb(152, 150, 150);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .action-btn{
    padding-top: 1rem;
@@ -70,11 +107,18 @@ margin-left: 4rem;
     width: 3rem;
     border-radius: 50%;
 }
-.intro-section{
-    display: flex;
+.intro-section > *{
+    flex-basis: 100%;
 }
-.discount{
+
+.intro-section{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.discount,.fifty{
     position: absolute;
+   
 }
 .discount-content{
    position:relative;
@@ -87,8 +131,7 @@ margin-left: 4rem;
 .left-section{
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
-    margin-left: 2rem;
+ 
 }
 .yellow-dot{
     background-color: #EDC126;
@@ -114,5 +157,6 @@ margin-left: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
     justify-content: center;
 }
